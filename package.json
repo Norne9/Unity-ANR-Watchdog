@@ -1,0 +1,13 @@
+{
+  "name": "com.norne.anrwatchdog",
+  "version": "0.1.0",
+  "description": "This package will allow you to reduce the number of ANRs and freezes of your application. This is achieved by using a watchdog timer which will restart the application in case something goes wrong.",
+  "displayName": "ANR & Freeze Watchdog",
+  "unity": "2018.4",
+  "author": {
+    "name": "Aleksey Pestov",
+    "email": "norne19@outlook.com"
+  },
+  "keywords": ["anr", "freeze", "watchdog", "performance", "stability"],
+  "license": "Apache-2.0"
+}
