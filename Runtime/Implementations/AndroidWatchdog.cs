@@ -32,11 +32,6 @@ namespace Norne.Implementations
             _watchdog.Call("startWatchdog", (long) (timeout * 1000f));
         }
 
-        public void RestartApp()
-        {
-            _watchdog.Call("restartApp");
-        }
-
         public string GetStacktrace()
         {
             return _watchdog.Call<string>("getStacktrace");

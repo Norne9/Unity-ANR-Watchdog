@@ -7,7 +7,7 @@ namespace Norne
     {
         private static IWatchdog _watchdog;
 
-        public static float ANRTimeout
+        public static float Timeout
         {
             get
             {
@@ -23,7 +23,7 @@ namespace Norne
                     return;
                 }
 
-                _watchdog.Timeout = value;
+                if (Mathf.Abs(value - _watchdog.Timeout) > 0.01f) _watchdog.Timeout = value;
             }
         }
 
@@ -37,7 +37,7 @@ namespace Norne
 #else
             _watchdog = new DefaultWatchdog();
 #endif
-            _watchdog.StartWatchdog(7f);
+            _watchdog.StartWatchdog(9f);
         }
 
         public static bool TryGetStacktrace(out string stacktrace)

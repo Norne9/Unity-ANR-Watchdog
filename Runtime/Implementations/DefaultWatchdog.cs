@@ -1,26 +1,31 @@
-using System.Diagnostics;
-using Debug = UnityEngine.Debug;
+using UnityEngine;
 
 namespace Norne.Implementations
 {
     internal class DefaultWatchdog : IWatchdog
     {
-        public float Timeout { get; set; }
+        private float _timeout;
+
+        public float Timeout
+        {
+            get => _timeout;
+            set
+            {
+                Debug.Log($"[Watchdog] Timeout set to {_timeout:F2}s");
+                _timeout = value;
+            }
+        }
 
         public void StartWatchdog(float timeout)
         {
             Timeout = timeout;
-            Debug.Log("[Watchdog] ANR Watchdog started.");
-        }
 
-        public void RestartApp()
-        {
-            Process.GetCurrentProcess().Kill();
+            Debug.Log("[Watchdog] ANR Watchdog started.");
         }
 
         public string GetStacktrace()
         {
-            return "";
+            return string.Empty;
         }
     }
 }

@@ -1,7 +1,10 @@
 {
-    "name": "Norne.ANRWatchdog",
+    "name": "Norne.ANRWatchdog.Sample",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "GUID:0b373a395e622411aa1246d01f5d0595",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
