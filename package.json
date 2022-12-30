@@ -1,6 +1,6 @@
 {
   "name": "com.norne.anrwatchdog",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This package will allow you to reduce the number of ANRs of your application. This is achieved by using a watchdog timer which will restart the application in case something goes wrong.",
   "displayName": "ANR Watchdog",
   "unity": "2018.4",
