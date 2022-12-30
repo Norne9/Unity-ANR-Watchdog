@@ -1,13 +1,28 @@
 {
   "name": "com.norne.anrwatchdog",
-  "version": "0.1.0",
-  "description": "This package will allow you to reduce the number of ANRs and freezes of your application. This is achieved by using a watchdog timer which will restart the application in case something goes wrong.",
-  "displayName": "ANR & Freeze Watchdog",
+  "version": "1.0.0",
+  "description": "This package will allow you to reduce the number of ANRs of your application. This is achieved by using a watchdog timer which will restart the application in case something goes wrong.",
+  "displayName": "ANR Watchdog",
   "unity": "2018.4",
   "author": {
     "name": "Aleksey Pestov",
     "email": "norne19@outlook.com"
   },
-  "keywords": ["anr", "freeze", "watchdog", "performance", "stability"],
-  "license": "Apache-2.0"
+  "keywords": [
+    "anr",
+    "watchdog",
+    "performance",
+    "stability"
+  ],
+  "changelogUrl": "https://github.com/Norne9/Unity-ANR-Watchdog/blob/main/CHANGELOG.md",
+  "documentationUrl": "https://github.com/Norne9/Unity-ANR-Watchdog/blob/main/Documentation~/com.norne.anrwatchdog.md",
+  "licensesUrl": "https://github.com/Norne9/Unity-ANR-Watchdog/blob/main/LICENSE.md",
+  "license": "Apache-2.0",
+  "samples": [
+    {
+      "displayName": "Watchdog Sample",
+      "description": "Contains a sample that shows how the app reacts to ANRs and how to change the timeout",
+      "path": "Samples~/Sample01"
+    }
+  ]
 }
